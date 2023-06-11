@@ -13,6 +13,18 @@ We have conducted EDA and applied supervised and unsupervised ML methods to find
 4.	What types of machine learning models do well on this dataset?
 5.	What characteristics most clearly characterize a popular song?
 
+This project aims to address the following key challenges:
+
+1. **Feature Selection**: Identifying the most relevant audio features and metadata that contribute significantly to the popularity of songs on Spotify.
+
+2. **Data Preprocessing**: Cleaning and preprocessing the dataset to handle missing values, outliers, and inconsistencies in order to create a reliable and representative training dataset.
+
+3. **Model Selection and Training**: Exploring various machine learning algorithms and models such as regression, classification, or ensemble techniques to develop a predictive model that can accurately estimate the popularity of songs.
+
+4. **Performance Evaluation**: Evaluating the performance of the developed model using appropriate metrics such as mean squared error, mean absolute error, or accuracy to assess its predictive capability and identifying areas of improvement.
+
+5. **Interpretability**: Analyzing the model to gain insights into the key features and factors that influence song popularity, providing valuable information to artists, music labels, and Spotify itself for decision-making and enhancing the user experience.
+
 
 
 ## 🔗 Links
