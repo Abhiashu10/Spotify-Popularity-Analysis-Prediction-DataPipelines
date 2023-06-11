@@ -7,6 +7,7 @@ Here we have created 3 small pipelines.
 ## Spotify Track Popularity – Analysis and Prediction
 
 The objective of this project is to develop a machine learning model that accurately predicts the popularity of songs on the Spotify platform. Spotify is a popular music streaming service with a vast library of songs from various genres and artists. The popularity of a song is a crucial factor for both artists and users, as it determines the visibility, reach, and potential success of a song. With about 158 million paying members in 178 countries, Spotify is the global leader in the streaming music sector. Spotify makes APIs available for obtaining data from its music track catalog. Spotify music datasets have become one of the most prominent datasets in the data science field for learning predictive modeling.
+
 We have conducted EDA and applied supervised and unsupervised ML methods to find the most popular songs and also we string together different user-defined Python functions to make a pipeline for processing data, we have created 3 small pipelines. We used over 600,000 Spotify tracks with their attributes in our project. Each song has 20 columns, each of which describes a different component of the song. We are attempting to optimize several business challenges and expect that our inquiry will reveal some business-related insights. So, here are some business questions we would like to have answered:
 1.	What is the overall trend and impact of notable events on the music industry?
 2.	Who are the most popular artists in the dataset?
