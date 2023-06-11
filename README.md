@@ -30,7 +30,7 @@ This project aims to address the following key challenges:
 
 
 ## 🔗 Links
-[![Code](https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/blob/ae7f2acd9aece13110d78263bcc89e1cd039622e/spotify-track-popularity-analysis-and-prediction.ipynb)
+[![Code](spotify-track-popularity-analysis-and-prediction.ipynb)
 
 
 
