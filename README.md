@@ -61,6 +61,8 @@ This collection includes audio metadata for over 600,000 Spotify tracks. Each co
 ## Resampling
 
 We first split the target variable (‘highly_popular’) into X and y matrices. Then the RandomOverSampler module is used to select observations from the dataset at random as long as they have the same number of classes (Peixeiro, 2020). Therefore, we have 75,843 observations of class 0 and 75,843 observations of class 1. They are transformed into balanced data.
+![image](https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/assets/101308486/ed9bb8d1-c707-47aa-9270-b9e637a8b296)
+
 
 ## Pipeline building
 Pipeline is an effective way to change and manipulate a lot of data. Pipelines are a series of ways to process data. With Pandas pipeline feature, we can string together different user-defined Python functions to make a pipeline for processing data.
