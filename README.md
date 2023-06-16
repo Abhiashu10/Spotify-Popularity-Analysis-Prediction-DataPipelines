@@ -14,6 +14,27 @@ What are the most popular songs in the dataset?
 What types of machine learning models do well on this dataset?
 What characteristics most clearly characterize a popular song?
 
+##  Key Findings
+
+1. What characteristics most clearly characterize a popular song?
+<img width="652" alt="image" src="https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/assets/101308486/4ae48a4b-0a48-4f34-88ee-22af31f32bef">
+When we compared the most popular songs to all of the songs in the dataset, we discovered that songs with higher energy and danceability tend to become more popular. However, when compared to standard songs, such popular songs lack acousticness and instrumentalness. Tracks released in recent years tend to be more popular.
+
+2. What is the overall trend and impact of notable events on the music industry?
+<img width="661" alt="image" src="https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/assets/101308486/2f68d302-ad59-419d-9eb6-d554553d609d">
+This graph illustrates the growing popularity of music over time, highlighting the current generation’s increased inclination towards music and the positive impact of digitization on the music industry. Notably, the graph indicates a significant decline in 2001, coinciding with the detrimental effects of the terrorist attacks. Furthermore, the music industry has thrived during the COVID-19 pandemic, with people seeking solace in music, resulting in its continued growth.
+
+3. Who are the most popular artists?
+
+A. Word Cloud for the most popular artists
+<img width="631" alt="image" src="https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/assets/101308486/fd4bd31f-1f24-4b5a-9ca2-9177a8fa3066">
+
+B. Bar Plot of the most popular artists
+<img width="686" alt="image" src="https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/assets/101308486/f5e8d668-1fec-49e3-9b38-a660ee7ed598">
+
+4. What are the most popular songs in the dataset?
+<img width="672" alt="image" src="https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/assets/101308486/b1b1a72b-7f69-4be6-aa60-524473e35758">
+
 This project aims to address the following key challenges:
 
 1. **Feature Selection**: Identifying the most relevant audio features and metadata that contribute significantly to the popularity of songs on Spotify.
@@ -25,43 +46,6 @@ This project aims to address the following key challenges:
 4. **Performance Evaluation**: Evaluating the performance of the developed model using appropriate metrics such as mean squared error, mean absolute error, or accuracy to assess its predictive capability and identifying areas of improvement.
 
 5. **Interpretability**: Analyzing the model to gain insights into the key features and factors that influence song popularity, providing valuable information to artists, music labels, and Spotify itself for decision-making and enhancing the user experience.
-
-##  Key Findings
-
-1. What is the overall trend and impact of notable events on the music industry?
-<img width="661" alt="image" src="https://github.com/Abhiashu10/Spotify-Popularity-Analysis-Prediction/assets/101308486/2f68d302-ad59-419d-9eb6-d554553d609d">
-
-
-
-
-## 🔗 Links
-[![Code](spotify-track-popularity-analysis-and-prediction.ipynb)
-
-
-
-## Features
-
-This collection includes audio metadata for over 600,000 Spotify tracks. Each column focuses on a different facet of the song. The following is a description of them.
-
-•	id: Spotify's unique identifier for each track (randomly generated alphanumeric string).    
-•	popularity: The popularity of a song is measured on a normalized scale of [0-100], with 100 being the most popular.  
-•	duration_ms: track duration in milliseconds.  
-•	explicit: whether or not the song contains explicit content.   
-•	artists: the artist's name.   
-•	id_artists: Spotify's unique identification for each artist.   
-•	release_date: When the album was released (date format: yyyy/mm/dd).    
-•	danceability: indicates a track's suitability for dancing based on a variety of musical aspects such as tempo, rhythm stability, beat strength, and overall regularity.         A value of 0.0 indicates that it is the least danceable, while 1.0 indicates that it is the most danceable.    
-•	energy: Energy is a perceptual measure of intensity and activity that ranges from 0.0 to 1.0. Typically, energetic tracks have a quick, loud, and boisterous vibe to them.   
-•	key: The estimated overall key of the track. Integers are assigned to pitches using conventional Pitch Class notation. For example, 0 equals C, 1 equals C/D, 2 equals D, and so on. If no key was found, the value is set to -1.    
-•	loudness: The overall volume of a track measured in decibels (dB). Typical values vary between -60 and 0 dB.   
-•	mode: The mode of a recording (major=1 or minor=0) denotes the type of scale from which its melodic content is formed.    
-•	speechiness: Speechiness is a value from 0.0 to 1.0 that shows how many spoken words are in a track. If a song's Speechiness is above 0.66, it probably has spoken words. If it is between 0.33 and 0.66, it could have both music and words. If it is below 0.33, it does not have any words.    
-•	acousticness: a confidence scale ranging from 0.0 to 1.0 indicating whether or not the track is acoustic. 1.0 indicates a high degree of certainty that the track is acoustic.    
-•	instrumentalness: The number of vocals in the song is represented by the instrumentalness, which ranges from 0.0 to 1.0. The closer to 1.0 it is, the more instrumental the music.     
-•	liveness: The possibility of an audience being present in the recording ranges from 0.0 to 1.0. Higher liveness numbers indicate a greater likelihood that the track was performed live.      
-•	valence: Valence is a scale from 0.0 to 1.0 that describes the melodic positivity expressed by a song.       
-•	tempo: A track's overall approximate tempo in beats per minute (BPM).     
-•	time_signature: A track's estimated total time signature. The time signature (meter) is a notational convention that specifies the number of beats in each bar (or measure).
 
 ## Resampling
 
@@ -80,6 +64,9 @@ The third pipeline is responsible for transforming numeric variables. First, mis
 
 As part of this project, we completed all necessary data science stages and were able to get some fascinating insights from the data. First, we performed the visualization and drew several intriguing insights from the data, such as the overall trend of the data, the events that had the greatest impact on the music business, the most well-known musicians, and the most well-liked songs. Three pipelines have been put in place to transform features in our models. Transforming duration from a millisecond to a minute is the first pipeline. The second pipeline uses a single hot encoder to convert category data to numerical variables, while the third pipeline scales the features of numerical variables. For this scenario, we employed 3 models (Logistic Regression, Random Forest and XGBoost) and Random Forest performed best with an accuracy of almost 97%. We discovered that the most crucial features to consider are loudness, energy, valence, acousticness, and explicitness. These features have the greatest influence on popularity. After hyperparameter tuning, we didn't see any appreciable improvements in the model's performance, which may be attributed to the large dataset's size, the lengthy training times associated with each combination, and the laptop's technical limitations. Working with this dataset was really intriguing, and in the future, we'd like to conduct our study utilizing cloud computing on a more powerful system. We'd also like to examine some of Spotify's rivals, such as Apple Music, Wynk Music, YouTube Music, etc. We also want to use Artificial Neural Networks, SVM, and K-nearest Neighbor for our analysis. For our study, we'd also like to make use of aspects like the music's genre, such as pop, rock, jazz, rap, etc.
 
+## 🔗 Links
+
+[![Code](spotify-track-popularity-analysis-and-prediction.ipynb)
 
 
 
