@@ -16,6 +16,10 @@ What types of machine learning models do well on this dataset?
 What characteristics most clearly characterize a popular song?
 
 ## Data Source: - https://www.kaggle.com/datasets/lehaknarnauli/spotify-datasets
+
+## 🔗 Links
+![Code](spotify-track-popularity-analysis-and-prediction.ipynb)
+
 ##  Key Findings
 
 1. What characteristics most clearly characterize a popular song?
@@ -65,10 +69,6 @@ The third pipeline is responsible for transforming numeric variables. First, mis
 ## Conclusion
 
 As part of this project, we completed all necessary data science stages and were able to get some fascinating insights from the data. First, we performed the visualization and drew several intriguing insights from the data, such as the overall trend of the data, the events that had the greatest impact on the music business, the most well-known musicians, and the most well-liked songs. Three pipelines have been put in place to transform features in our models. Transforming duration from a millisecond to a minute is the first pipeline. The second pipeline uses a single hot encoder to convert category data to numerical variables, while the third pipeline scales the features of numerical variables. For this scenario, we employed 3 models (Logistic Regression, Random Forest and XGBoost) and Random Forest performed best with an accuracy of almost 97%. We discovered that the most crucial features to consider are loudness, energy, valence, acousticness, and explicitness. These features have the greatest influence on popularity. After hyperparameter tuning, we didn't see any appreciable improvements in the model's performance, which may be attributed to the large dataset's size, the lengthy training times associated with each combination, and the laptop's technical limitations. Working with this dataset was really intriguing, and in the future, we'd like to conduct our study utilizing cloud computing on a more powerful system. We'd also like to examine some of Spotify's rivals, such as Apple Music, Wynk Music, YouTube Music, etc. We also want to use Artificial Neural Networks, SVM, and K-nearest Neighbor for our analysis. For our study, we'd also like to make use of aspects like the music's genre, such as pop, rock, jazz, rap, etc.
-
-## 🔗 Links
-
-[![Code](spotify-track-popularity-analysis-and-prediction.ipynb)
 
 
 
