@@ -18,7 +18,7 @@ What characteristics most clearly characterize a popular song?
 ## Data Source: - https://www.kaggle.com/datasets/lehaknarnauli/spotify-datasets
 
 ## 🔗 Links
-![Code](spotify-track-popularity-analysis-and-prediction.ipynb)
+[Code](spotify-track-popularity-analysis-and-prediction.ipynb)
 
 ##  Key Findings
 
