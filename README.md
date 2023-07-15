@@ -15,10 +15,11 @@ What are the most popular songs in the dataset?
 What types of machine learning models do well on this dataset?
 What characteristics most clearly characterize a popular song?
 
-## Data Source: - https://www.kaggle.com/datasets/lehaknarnauli/spotify-datasets
-
 ## 🔗 Links
 [Code](spotify-track-popularity-analysis-and-prediction.ipynb)
+
+## 🔗 Links
+[Dataset Source](https://www.kaggle.com/datasets/lehaknarnauli/spotify-datasets)
 
 ##  Key Findings
 
